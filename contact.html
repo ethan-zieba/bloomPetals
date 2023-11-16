@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>BloomPetals - Accueil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h1>Accueil</h1></a></li>
+                <li class="dropdown">
+                    <a href="entreprise.html"><h1>Entreprise</h1></a>
+                    <div class="dropdown-content">
+                        <a href="entreprise.html#locaux">Locaux</a>
+                        <a href="entreprise.html#philosophie">Philosophie</a>
+                        <a href="entreprise.html#histoire">Histoire</a>
+                        <a href="entreprise.html#membres">Membres</a>
+                       <a href="entreprise.html#kermesse">Kermesse annuelle</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="realisations.html"><h1>Réalisations</h1></a>
+                    <div class="dropdown-content">
+                        <a href="realisations.html#records">Records du monde</a>
+                        <a href="realisations.html#gazon-title">Bouquets de gazon</a>
+                        <a href="realisations.html#mal-title">Fleurs du mal</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html"><h1>Contact</h1></a>
+                    <div class="dropdown-content">
+                        <a href="contact.html#nous">Nous contacter</a>
+                        <a href="contact.html#formulaire">Formulaire</a>
+                    </div>
+               </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="nous">
+        <h1>Nous contacter</h1>
+        <p>Tel: 06 13 12 24 42</p>
+        <p>Mail: Dessine-moi-un-bouquet@gmail.org</p>
+    </div>
+    <div id="formulaire" class="formulaire" >
+        <h2>Formulaire de contact</h2>
+        <form action="#" method="post">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+              <option value="monsieur">Monsieur</option>
+              <option value="madame">Madame</option>
+              <option value="non_precise">Non précisé</option>
+            </select>
+        
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        
+            <label for="adresse">Adresse postale :</label>
+            <input type="text" id="adresse" name="adresse" required>
+        
+            <label for="email">Adresse mail :</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="confidentialite">J'accepte la politique de confidentialité :</label>
+            <input type="checkbox" id="confidentialite" name="confidentialite" required>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <li>Mentions légales</li>
+            <li>Pas de copyright mais pour le principe</li>
+            <li>Réseaux sociaux</li>
+        </ul>
+    </footer>
+</body>
+</html>

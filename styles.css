@@ -1,0 +1,353 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0%;    
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h1, h2, h3, p {
+    margin: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+header {
+    background: linear-gradient(45deg, rgba(255, 102, 61, 0.6) 0%, #FF8FB1 27%, #80489C 80%, #432C7A 100%);
+    padding: 0.3em;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer li {
+    display: flex;
+    padding: 0% 5%;
+}
+
+footer {
+    background: linear-gradient(-180deg, #707070 0%, #ffffff 20%, #ffffff 80%, #707070 100%);
+    padding: 0.07% 4%;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;    
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    padding: 1% 30px;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+}
+
+nav a:hover {
+    background-color: rgba(167, 255, 204, 0.4);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f36bff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-margin {
+   margin-top: 6%;
+}
+
+div {
+    margin: 0.4% 0%;
+    text-align: center;
+ }
+
+/* Start of gallery css styling */
+
+.gallery {
+    top: 0px;
+    justify-content: center;
+    margin: 2% 1%;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-areas:
+        "head head head"
+        "mainimage mainimage image1"
+        "mainimage mainimage image2"
+        "mainimage mainimage image3";
+    grid-template-columns: 300px repeat(2, 200px);
+    grid-template-rows: 60px repeat(3, 200px);
+    scale: 1;
+}
+
+.mainimage {
+    background: url("images/main.png") no-repeat center/cover;
+    border-radius: 20px;
+    grid-area: mainimage;
+}
+
+.image1 {
+    grid-area: image1;
+    border-radius: 20px;
+    background: url("images/flower1.png") no-repeat center/cover;
+}
+
+.image2 {
+    grid-area: image2;
+    border-radius: 20px;
+    background: url("images/flower2.png") no-repeat center/cover;
+}
+
+.image3 {
+    grid-area: image3;
+    border-radius: 20px;
+    background: url("images/flower3.png") no-repeat center/cover;
+}
+
+.sizeimage {
+    grid-area: leftsize;
+    border-radius: 20px;
+    background: url("images/flower1.png") no-repeat center/cover;
+}
+
+.gallery-text-head {
+    font-size: 1.3em;
+    grid-area: head;
+}
+
+.img-wrap-zoom {
+    overflow: hidden;
+    transition: all .3s ease;
+    border: 10px;
+}
+
+.img-wrap-zoom:hover{
+    transform:scale(1.05);
+}
+
+/* gallery on realisations.html page */
+
+.rgallery {
+    top: 0px;
+    justify-content: center;
+    margin: 2% 2%;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 0.2%;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 200px);
+    scale: 1;
+}
+
+.realgrid-item {
+    height: 100%;
+    width: 100%;
+}
+
+.realgrid-item img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4%;
+}
+
+/* End of gallery css styling */
+
+#locaux div {
+    padding-left: 3em;
+    display: flex;
+    background: url("images/locaux.png") no-repeat cover;
+    width: 40em;
+    height: 20em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 9.5% auto;
+}
+
+#locaux div img {
+    margin-bottom: 4%;
+}
+
+#philosophie div {
+    padding-left: 3em;
+    display: flex;
+    margin: 2% auto;
+    background: url("images/philosophie.png") no-repeat cover;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    justify-content: center;
+}
+
+#histoire {
+    display: flex;
+    margin: 1%;
+    flex-direction: column;
+}
+
+#histoire div {
+    width: 50%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#membres {
+    display: flex;
+    flex-direction: column;
+}
+
+#membres div {
+    margin: 1% 6%;
+    display: flex;
+    flex-direction: row;
+}
+
+#membres div div {
+    margin: 0% auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    
+}
+
+#membres div div h1 {
+    margin: 1.5%;
+}
+
+#membres div div img {
+    max-width: 90%;
+    border-radius: 2%;
+    border-width: 10%;
+    border-color: #707070;
+    object-fit: cover;
+}
+
+#kermesse div {
+    max-width: 40em;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#records {
+    display: flex;
+    flex-direction: row;
+}
+
+#records div {
+    max-width: 20%;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}
+
+#records div img {
+    margin-top: 4%;
+    max-width: 100%;
+}
+
+#gazon-title {
+    margin: 2% 0;
+}
+
+#gazon {
+    margin: 0% 10%;
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#mal {
+    margin: 0% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#mal-title {
+    margin: 2% 0;
+}
+
+#mosaique-title {
+    margin-top: 2%;
+}
+
+/* Formulaire de contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1% 2% 2% 2%;
+    border-radius: 2%;
+    margin: 1% auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20%;
+}
+
+form label {
+    margin: 4% 0% 1% 0%;
+}
+
+form button {
+    margin-top: 4%;
+}
+
+#nous {
+    display: flex;
+    flex-direction: column;
+    margin: 6% auto 0%;
+}
